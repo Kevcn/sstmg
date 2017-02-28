@@ -1,0 +1,907 @@
+/* =================================
+  WEB FONTS
+==================================== */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+/* =================================
+  ELEMENT STYLES
+==================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #565656;
+  background: #F7F4F4;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  /*max-width: 1080px;*/
+}
+h1,
+h2,
+h3,
+header {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+  line-height: 1.8;
+}
+
+h2,
+h3 {
+  font-weight: normal;
+  padding: 5px 0px;
+}
+
+h2 {
+  width:100%;
+}
+
+h4 {
+  padding: 8px 0px;
+}
+
+ul {
+  list-style-type: none; /* removes list bullet points*/
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+  color: #565656;
+}
+hr {
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  margin: 3em auto 2em;
+  width: 85%;
+}
+
+
+
+/* =================================
+  LAYOUT & PAGE STYLES
+==================================== */
+
+
+.container {
+  /*position: relative;*/
+  /*padding: 68.38px 50px 10px 50px;*/
+  padding-top: 57.38px;
+  /*height: 2000px;*/
+  /* To be removed*/
+}
+
+.main-content {
+  padding: 11px 50px 10px 50px;
+}
+
+/* lines to seperate sections*/
+.content-box > hr {
+  margin: 1em auto 2em;
+  width: 95%;
+}
+
+.subHeader {
+  font-weight: bold;
+}
+/* =================================
+  Home Page Styles
+==================================== */
+
+.github_icon {
+  width:120px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+  transition: all .2s ease-in-out;
+}
+
+.github_icon:hover {
+  transform: scale(1.2);
+}
+
+.news-box {
+  padding: 5px;
+  width: 25%;
+}
+
+.news-box h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.news-box h3:hover {
+  text-decoration: underline;
+}
+
+.news-box p {
+  line-height: 1.3;
+}
+
+.news-section,
+.youtubeTrend-section,
+.weather-section {
+  padding: 30px 20px;
+  margin: 1em;
+  background: white;
+}
+
+.youtube-box {
+  padding: 5px;
+  width: 25%;
+}
+
+.weather-box {
+  padding: 5px 5px 10px;
+}
+
+.weather-section td {
+  padding: 5px 20px 0 0;
+}
+
+.weather-section h3{
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.weather-section th {
+  text-align: left;
+}
+
+.favWebs-section {
+  width: 100%;
+  /*margin: 0 auto;*/
+  padding: 20px 0 0;
+}
+
+.favWebs-section a {
+  line-height: 22px;
+}
+
+.weather-section {
+  width: 100%;
+}
+
+.searchBar {
+  background-color: #f6f6f6;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#eae8e8));
+	background-image: -webkit-linear-gradient(top, #f6f6f6, #eae8e8);
+	background-image: -moz-linear-gradient(top, #f6f6f6, #eae8e8);
+	background-image: -ms-linear-gradient(top, #f6f6f6, #eae8e8);
+	background-image: -o-linear-gradient(top, #f6f6f6, #eae8e8);
+	background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+	border-color: #dedede #bababa #aaa #bababa;
+	border-style: solid;
+	border-width: 1px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+	-moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+	box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+	margin: 0px auto;
+	overflow: hidden;
+	padding: 8px;
+	width: 480px;
+}
+
+.searchBar #search {
+  border: 1px solid #CCC;
+	-webkit-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+	-moz-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+	box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+  color: #999;
+	float:none;
+	font: 20px Josefin Sans, sans-serif;
+	height: 42px;
+	padding: 10px;
+	width: 320px;
+  margin: 0 15px 0 2px;
+}
+
+.searchBar #search:focus {
+  border-color: #aaa;
+	-webkit-box-shadow: 0 1px 1px #bbb inset;
+	-moz-box-shadow: 0 1px 1px #bbb inset;
+	box-shadow: 0 1px 1px #bbb inset;
+	outline: 0;
+}
+
+.searchEngines {
+  /*display:inline-block;*/
+  background: transparent;
+  border: transparent;
+  width: 90px;
+  padding: 5px;
+  /*margin-right: 2px;*/
+  font-size: 16px;
+  height: 42px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align-last: center;
+}
+
+.searchIcon {
+  width: 28.1px;
+  height: 28px;
+  margin: 0;
+  cursor:pointer;
+}
+
+
+/* =================================
+  Travel Page Styles
+==================================== */
+
+.travel {
+  height: calc(100vh - 57.38px);
+  background:url("https://4.bp.blogspot.com/-VCMcgYmxTig/Uv99Q9KJDeI/AAAAAAAAku0/W8CPbCivl64/s0/View+of+Aegean+Sea+from+Santorini_Ultra+HD.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* Creates a transparent layer effect on top of the background image */
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+
+}
+
+@keyframes travel-msg {
+    from {opacity: 0;}
+    to   {opacity: 1;}
+}
+
+.hide-content {
+  opacity: 0;
+  display: none;
+}
+
+.travel-msg {
+  -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
+  animation-delay: 1s;
+  animation-name: travel-msg;
+  animation-duration: 3s;
+  opacity: 0;
+  animation-fill-mode: both;
+  color: white;
+  margin: 0 auto;
+  padding-top: 150px;
+  padding-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.travel-content {
+
+  animation-name: travel-msg;
+  animation-duration: 3s;
+  opacity: 0;
+  animation-fill-mode: both;
+  width: 95%;
+  margin: 140px auto 0px;
+  background: transparent;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.travel span {
+  -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+  animation-delay: 2s;
+  animation-name: travel-msg;
+  animation-duration: 3s;
+  opacity: 0;
+  animation-fill-mode: both;
+}
+
+/*.testy {
+  width: 95%;
+  margin: 140px auto 0px;
+  background: transparent;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+
+}*/
+
+.travel-content > a {
+  padding: 10px;
+  margin: 3px;
+  flex-grow: 1;
+  background: white;
+  /*cursor:default;*/
+  opacity: 0.8;
+  line-height: 244px;
+  text-align: center;
+  color:transparent;
+}
+
+/*.travel-content a h2 {
+  line-height: 244px;
+  text-align: center;
+  display: none;
+}*/
+
+.travel-content > a:hover {
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+  color:white;
+}
+
+.travel-content .italy-home {
+  background:url('https://c1.staticflickr.com/1/708/31966597553_837a73b05f_b.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.travel-content .france-home {
+  background: url('https://c1.staticflickr.com/1/262/32400671110_50df2e4fe7_b.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.travel-content .holland-home {
+  background: url('https://c1.staticflickr.com/1/405/32781864935_9c829f74d9_z.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.travel-content .turkey-home {
+  background: url('https://c1.staticflickr.com/1/720/32628645702_4c7341e9ac_z.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+.arrow {
+  /*width:5%;*/
+  display:block;
+  margin-top:5px;
+  /*margin: 0 auto;*/
+  text-align: center;
+  background-image: url('../imgs/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  color:transparent;
+}
+
+/*for thumbnail picstures on travel pages.*/
+.moments img {
+  margin: 5px;
+  padding: 0;
+}
+
+.italy .moments a,
+.italy .food a {
+  /*border: 1px solid black;*/
+  margin: 0 0.5%;
+  width:19%;
+  /*background:green;*/
+}
+
+.italy h1 {
+  padding: 10px 0;
+}
+
+.italy .external_link::before {
+  content: " > ";
+}
+
+.italy .external_link:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color:#0073e6;
+}
+
+.italy .route {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* General styles for travel sub-pages*/
+.turkey,
+.france,
+.holland{
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+/* =================================
+  Workshop Page Styles
+==================================== */
+
+.workshop {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.workshop h1{
+  padding-top: 5px;
+}
+
+.workshop ul h4 {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.workshop-sidebar {
+  padding: 5px;
+  width:20%;
+  /*position: fixed;*/
+}
+
+.workshop-sidebar li:nth-child(even) {
+  background-color: #eaebed;
+}
+
+.workshop-content {
+  padding: 5px;
+  width: 75%;
+  margin-left: auto;
+}
+
+.workshop-sidebar li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+/*To position the content below nav bar*/
+.workshop .anchor{
+  padding-top: 73.38px;
+  margin-top: -73.38px;
+}
+
+.workshop .misc li:nth-child(even) {
+  background: #eaebed;
+}
+
+.workshop .misc li {
+  margin-bottom: 5px;
+}
+
+.workshop section {
+  padding: 10px 0;
+}
+
+.workshop section h2 {
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.workshop .arrays .flexbox {
+  padding: 10px 0;
+}
+
+.workshop .arrays code {
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.workshop-content a:hover {
+  text-decoration: underline;
+  color: #0073e6;
+}
+
+.workshop .video_links {
+  font-weight: bold;
+}
+
+/*Indicate external links*/
+.workshop .workshop-content a::before {
+  content: " > ";
+}
+
+/*invaild form warning message will be in red. */
+.workshop .form span {
+  color: red;
+  width:100%;
+}
+
+.workshop textarea {
+  width: 90%;
+}
+
+.workshop .misc p{
+  padding-bottom: 8px;
+}
+
+.workshop h1 {
+  text-decoration: underline;
+}
+
+.workshop h2::before {
+  content: "";
+  border-left: 5px solid lightblue;
+  margin-right: 5px;
+}
+
+
+.workshop input[type="text"],
+.workshop input[type="password"],
+.workshop textarea {
+  background: #F7F4F4;
+  border: 1px solid rgba(0, 0, 0, .1);
+  font-size: 1.6em;
+  padding: .3em .5em;
+  border-radius: 5px;
+  width: 100%;
+}
+.workshop input[type="text"]:focus,
+.workshop input[type="password"]:focus,
+.workshop textarea:focus {
+  background: #fff;
+}
+
+.workshop label {
+  font-weight: bold;
+  display: block;
+  width: 100%;
+}
+
+.workshop .submit_button {
+  width: 80%;
+  margin: 0 10%;
+  padding: 8px;
+  /*font-size: 14.4px;*/
+  color: #565656;
+  background:#F7F4F4 ;
+  border-radius: 3px;
+  border: solid 1px #565656;
+  cursor: pointer;
+}
+
+.workshop .submit_button:hover {
+  color: #F7F4F4;
+  background: #0073e6;
+}
+
+.form {
+  padding: 5px;
+  max-width: 50%;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, .1);
+  margin-top: 10px;
+}
+
+
+/* =================================
+  Photography Page Styles
+==================================== */
+
+.photography_page_wrapper {
+  /*background: lightblue;*/
+  background:url("http://cdn.pcwallart.com/images/dark-background-tumblr-wallpaper-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+}
+
+.photography_content {
+  padding-top: 11px;
+}
+
+.top_sec {
+  color: #F7F4F4;
+  padding: 0 50px 30px;
+}
+
+.photography .top_sec a {
+  margin: 0 10px;
+  padding: 5px 20px;
+  color: #F7F4F4;
+  font-weight: bold;
+  transition: .2s;
+  /*font-family: */
+}
+
+.photography .top_sec a:hover {
+  color: #0073e6;
+}
+
+.portrait-intro,
+.landscape-intro,
+.nightscene-intro{
+  width: 60%;
+  text-align: center;
+}
+
+.exposure_triangle {
+  border-top: 1px solid #F7F4F4;
+  padding-top: 5px;
+}
+
+.photography img {
+  display: inline-block;
+  margin: 0;
+  width: 60%;
+}
+
+.landscape-intro {
+  float:right;
+  margin-top: -60px;
+}
+
+.nightscene-intro {
+  float: left;
+  margin-top: -60px;
+}
+
+.top_sec .extra {
+  padding-top: 20px;
+}
+
+.top_sec .extra a:first-child {
+  border-right: 1px solid white;
+}
+
+.aperture .photography_page_content {
+  background: white;
+}
+
+.aperture img {
+  width: 70%;
+}
+
+.aperture .aperture_equation {
+  text-align: center;
+  line-height: 3;
+}
+
+.aperture .aperture_equation span {
+  padding: 5px 10px;
+}
+
+.d5500 .photography_page_content {
+  text-align: center;
+  background: white;
+}
+
+.d5500 img {
+  width:50%;
+}
+
+
+/*bottom section of photography page to be complete*/
+.bot_sec {
+  background: white;
+  padding: 0 30px 100px;
+}
+
+.bot_sec h3{
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+/* No longer used*/
+/*.content-box {
+  padding: 30px 20px;
+  margin: 1em;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}*/
+
+
+.page_header{
+  height: 150px;
+}
+
+.page_header h1 {
+  text-align: center;
+  line-height: 150px;
+  color: #F7F4F4;
+}
+
+.photography_page_content {
+  background: #F7F4F4;
+  padding: 10px 20% 50px;
+  /*width: 60%;*/
+}
+
+.iso .photography_page_content > img[alt="iso_1"]{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.iso ul span {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.iso li:before {
+  content: "»   ";
+}
+
+.portrait img {
+  width: 70%;
+}
+
+.wide_angle .parallel_image img{
+  width: 45%;
+}
+
+.wide_angle .photography_page_content > img,
+.wide_angle .photography_page_content li >img {
+  width: 70%;
+}
+
+img[alt="wide_angle_16"]{
+    float: left;
+}
+
+img[alt="wide_angle_17"]{
+    float: right;
+}
+
+img[alt="wide_angle_16"],
+img[alt="wide_angle_17"] {
+  width: 50%;
+  height: auto;
+  padding: 5px;
+}
+
+
+/* Tools -------- */
+.flexbox {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-sa {
+  justify-content: space-around;;
+}
+
+.flex-sb {
+  justify-content: space-between;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.ul_bullet {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.buttons {
+  padding: 8px;
+  /*outline: none;*/
+  margin-right: 20px;
+  font-size: 14.4px;
+  color: #565656;
+  background:#F7F4F4 ;
+  border-radius: 3px;
+  border: solid 1px #565656;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  color: #F7F4F4;
+  background: #565656;
+}
+
+a:hover{
+  color: #0073e6;
+}
+
+/*embedded youtube videos*/
+iframe {
+ display: block;
+ margin: 0 auto;
+ width: 70%;
+}
+
+
+/* IMAGES -------- */
+img {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+}
+
+/* MAIN NAV -------- */
+header {
+  background: #565656;
+  /*margin-bottom: 2em;*/
+  z-index: 100;
+  transition: height 600ms 0s ease;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.photography_header {
+  background: transparent;
+  position: relative;
+}
+
+.photography_nav a {
+  color: #F7F4F4;
+  font-size: .95em;
+  text-align: center;
+  /*font-weight: bold;*/
+  text-transform: uppercase;
+  display: block;
+  padding: 1em 1.5em;
+  transition: .2s;
+}
+
+.photography_nav a:hover{
+  color: #0073e6;
+}
+
+.main-nav a {
+  font-size: .95em;
+  color: #F7F4F4;
+  text-align: center;
+  /*font-weight: bold;*/
+  text-transform: uppercase;
+  display: block;
+  padding: 1em 1.5em;
+  transition: .2s;
+}
+.main-nav a:hover{
+  color: #0073e6;
+}
+
+
+/* SUB-NAV -------- */
+
+
+/* ICONS -------- */
+
+
+/* =================================
+  MEDIA QUERIES
+==================================== */
+
+/*@media (min-width: 0) and (max-width: 768px) {
+  body {
+    padding-top: .8em;
+  }
+  .home a {
+    border-color: transparent;
+  }
+   .main-nav a {
+     border-top: 2px solid transparent;
+     border-bottom: 2px solid transparent;
+   }
+   .main-nav a:hover {
+     border-color: rgba(0,0,0, .1);
+   }
+  .main-nav a {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    padding: 1.25em 1.5em;
+  }
+  .main-nav a:hover {
+    border-color: rgba(0,0,0, .1);
+  }
+}*/
